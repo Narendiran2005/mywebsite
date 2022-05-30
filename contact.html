@@ -117,10 +117,10 @@
 
 
             <div class="col-right">
-                <form class="contact-form">
+                <form class="contact-form" name="contact-form" method = "post">
                     <div class="form-group">
                         <input type="text" placeholder="your name" name="name" required="Please fill the form">
-                        <input type="email" placeholder="your email" name="email" required="Please fill the form">
+                        <input type="email" placeholder="your email" name="subject" required="Please fill the form">
                         <input type="text" placeholder="your subject" name="text" required="Please fill the form">
                     </div>
                     <textarea rows="5" required="Please fill the form"></textarea>
@@ -185,13 +185,13 @@
 
                 <div>
                     <span><i class="fas fa-phone"></i></span>
-                    <span class="text">+91 94887878785</span>
+                    <span class="text">+91 7604905565</span>
                 </div>
 
 
                 <div>
                     <span><i class="fas fa-envelope"></i></span>
-                    <span class="text">naren@domain.in</span>
+                    <span class="text">narenbabu2015@gmail.com</span>
                 </div>
 
 
@@ -204,7 +204,7 @@
 
 
         <div class="footer-text">
-            <p class="text">Copyright &copy; 2021 All rights reserved | Naren Design Agency</p>
+            <p class="text">Copyright &copy; 2022 All rights reserved | Naren Design Agency</p>
         </div>
 
     </footer>
@@ -224,7 +224,19 @@
 
 
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js">
+                                                     function myFunction(){
+
+    var user = document.forms["contact-form"]["name"].value;
+    var pass = document.forms["contact-form"]["subject"].value;
+
+    if (user=="naren" && pass== 2005) {
+
+        window.location.href="diary.html"
+    }
+    
+
+}</script>
 
 
 
