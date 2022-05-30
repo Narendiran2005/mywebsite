@@ -1,6 +1,9 @@
 
 /* NavBar */
+#diary{
 
+	display: none;
+}
 .navbar{
 	position: fixed;
 	z-index: 999;
